@@ -88,12 +88,16 @@ body {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    width: 70%;
+    width: 40vw;
+    margin-left: 10px;
+    transition: 0.3s ease-out;
 }
 
 .chat::placeholder {
     color: white;
     padding-left: 6px;
+    transition: 0.3s ease-out;
+    font-family: monospace;
 }
 
 .chat:focus {
@@ -101,4 +105,51 @@ body {
     outline: none;
     color: white;
     padding-left: 10px;
+    transition: 0.3s ease-out;
+    font-family: monospace;
+}
+
+i {
+    position: relative;
+    top: 360px;
+    float: right;
+    margin-right: 20px;
+    color: #ffffffda;
+    filter: blur(0.2px);
+    opacity: 60%;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+i:hover {
+    color: #1cbfff;
+    opacity: 100%;
+    transform: rotate(20deg);
+}
+
+.dis-box {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 40vw;
+    padding: 10px;
+    margin: 20px;
+}
+
+#user {
+    font-family: sans-serif;
+    color: white;
+    font-weight: 200;
+    font-size: 14px;
+    position: absolute;
+    top:-19px;
+    left: 1px;
+}
+
+#msg {
+    font-family: monospace;
+    color: white;
 }
